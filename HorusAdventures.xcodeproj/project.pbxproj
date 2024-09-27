@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DF511FE52C9DC515000E086E /* HorusAdventuresApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF511FE42C9DC515000E086E /* HorusAdventuresApp.swift */; };
+		DF511FE92C9DC516000E086E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF511FE82C9DC516000E086E /* Assets.xcassets */; };
+		DF511FEC2C9DC516000E086E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF511FEB2C9DC516000E086E /* Preview Assets.xcassets */; };
+		DF511FF62C9DC5B8000E086E /* Attraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF511FF52C9DC5B8000E086E /* Attraction.swift */; };
+		DF511FF92C9DC626000E086E /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF511FF82C9DC626000E086E /* MapView.swift */; };
+		DF511FFD2C9DC68B000E086E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF511FFC2C9DC68B000E086E /* Constants.swift */; };
+		DF5120002C9DC7D1000E086E /* AttractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF511FFF2C9DC7D1000E086E /* AttractionView.swift */; };
+		DF5120022CA06ED2000E086E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5120012CA06ED2000E086E /* MainView.swift */; };
+		DF5120052CA06FF7000E086E /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5120042CA06FF7000E086E /* StartView.swift */; };
+		DF5120072CA09BB7000E086E /* StrokeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5120062CA09BB7000E086E /* StrokeTextView.swift */; };
+		DF5120092CA0A2C7000E086E /* backgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DF5120082CA0A2C6000E086E /* backgroundMusic.mp3 */; };
+		DF51200C2CA0C660000E086E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF51200B2CA0C660000E086E /* SettingsView.swift */; };
+		DF5120122CA0D2BA000E086E /* BackgroundSoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5120112CA0D2BA000E086E /* BackgroundSoundManager.swift */; };
+		DF54652D2CA19CE9007F98E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF54652C2CA19CE9007F98E9 /* LaunchScreen.storyboard */; };
+		DF54652F2CA2284D007F98E9 /* Kind.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF54652E2CA2284D007F98E9 /* Kind.swift */; };
+		DF5465322CA22AA4007F98E9 /* Image+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5465312CA22AA4007F98E9 /* Image+Ext.swift */; };
+		DF5465342CA33AB5007F98E9 /* UserDefaults+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5465332CA33AB5007F98E9 /* UserDefaults+Ext.swift */; };
+		DF5465362CA33FC9007F98E9 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5465352CA33FC9007F98E9 /* WeatherService.swift */; };
+		DF5465392CA3406B007F98E9 /* WeatherSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5465382CA3406B007F98E9 /* WeatherSheet.swift */; };
+		DF65C7D62CA5D25C00EB89F6 /* GetAchievementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF65C7D52CA5D25C00EB89F6 /* GetAchievementView.swift */; };
+		DF65C7D82CA5D26F00EB89F6 /* AchievementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF65C7D72CA5D26F00EB89F6 /* AchievementsView.swift */; };
+		DF65C7DB2CA5D3B100EB89F6 /* RoutePlanningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF65C7DA2CA5D3B100EB89F6 /* RoutePlanningView.swift */; };
+		DF65C7DD2CA5F95500EB89F6 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF65C7DC2CA5F95500EB89F6 /* LocationManager.swift */; };
+		DF65C7E22CA6243E00EB89F6 /* AchievementManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF65C7E12CA6243E00EB89F6 /* AchievementManager.swift */; };
+		DF65C7E42CA6363C00EB89F6 /* TripsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF65C7E32CA6363C00EB89F6 /* TripsView.swift */; };
+		DF65C7E62CA7123E00EB89F6 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF65C7E52CA7123E00EB89F6 /* NotificationManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DF511FE12C9DC515000E086E /* HorusAdventures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HorusAdventures.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF511FE42C9DC515000E086E /* HorusAdventuresApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorusAdventuresApp.swift; sourceTree = "<group>"; };
+		DF511FE82C9DC516000E086E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF511FEB2C9DC516000E086E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DF511FF52C9DC5B8000E086E /* Attraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attraction.swift; sourceTree = "<group>"; };
+		DF511FF82C9DC626000E086E /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		DF511FFC2C9DC68B000E086E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DF511FFF2C9DC7D1000E086E /* AttractionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttractionView.swift; sourceTree = "<group>"; };
+		DF5120012CA06ED2000E086E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		DF5120042CA06FF7000E086E /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		DF5120062CA09BB7000E086E /* StrokeTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeTextView.swift; sourceTree = "<group>"; };
+		DF5120082CA0A2C6000E086E /* backgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundMusic.mp3; sourceTree = "<group>"; };
+		DF51200B2CA0C660000E086E /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		DF5120112CA0D2BA000E086E /* BackgroundSoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundSoundManager.swift; sourceTree = "<group>"; };
+		DF54652C2CA19CE9007F98E9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DF54652E2CA2284D007F98E9 /* Kind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kind.swift; sourceTree = "<group>"; };
+		DF5465312CA22AA4007F98E9 /* Image+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Ext.swift"; sourceTree = "<group>"; };
+		DF5465332CA33AB5007F98E9 /* UserDefaults+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Ext.swift"; sourceTree = "<group>"; };
+		DF5465352CA33FC9007F98E9 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		DF5465382CA3406B007F98E9 /* WeatherSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherSheet.swift; sourceTree = "<group>"; };
+		DF65C7D52CA5D25C00EB89F6 /* GetAchievementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAchievementView.swift; sourceTree = "<group>"; };
+		DF65C7D72CA5D26F00EB89F6 /* AchievementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementsView.swift; sourceTree = "<group>"; };
+		DF65C7DA2CA5D3B100EB89F6 /* RoutePlanningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutePlanningView.swift; sourceTree = "<group>"; };
+		DF65C7DC2CA5F95500EB89F6 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		DF65C7DE2CA603C600EB89F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF65C7E12CA6243E00EB89F6 /* AchievementManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementManager.swift; sourceTree = "<group>"; };
+		DF65C7E32CA6363C00EB89F6 /* TripsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsView.swift; sourceTree = "<group>"; };
+		DF65C7E52CA7123E00EB89F6 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF511FDE2C9DC515000E086E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DF511FD82C9DC515000E086E = {
+			isa = PBXGroup;
+			children = (
+				DF511FE32C9DC515000E086E /* HorusAdventures */,
+				DF511FE22C9DC515000E086E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DF511FE22C9DC515000E086E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF511FE12C9DC515000E086E /* HorusAdventures.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF511FE32C9DC515000E086E /* HorusAdventures */ = {
+			isa = PBXGroup;
+			children = (
+				DF511FF22C9DC56C000E086E /* Core */,
+				DF511FF32C9DC580000E086E /* Modules */,
+				DF511FEA2C9DC516000E086E /* Preview Content */,
+			);
+			path = HorusAdventures;
+			sourceTree = "<group>";
+		};
+		DF511FEA2C9DC516000E086E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DF511FEB2C9DC516000E086E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DF511FF22C9DC56C000E086E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				DF5465302CA22A8C007F98E9 /* Extensions */,
+				DF51200D2CA0C823000E086E /* App */,
+				DF5120032CA06FEA000E086E /* Views */,
+				DF511FFB2C9DC678000E086E /* Resources */,
+				DF511FF42C9DC59E000E086E /* Models */,
+				DF5120102CA0D2A3000E086E /* Managers */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		DF511FF32C9DC580000E086E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				DF5120012CA06ED2000E086E /* MainView.swift */,
+				DF65C7D92CA5D39700EB89F6 /* RoutePlanning */,
+				DF51200A2CA0C652000E086E /* Settings */,
+				DF511FF72C9DC613000E086E /* Map */,
+				DF511FFE2C9DC7BB000E086E /* Attraction */,
+				DF51200F2CA0CCA1000E086E /* Achievement */,
+				DF5465372CA34046007F98E9 /* Weather */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		DF511FF42C9DC59E000E086E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DF511FF52C9DC5B8000E086E /* Attraction.swift */,
+				DF54652E2CA2284D007F98E9 /* Kind.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DF511FF72C9DC613000E086E /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				DF511FF82C9DC626000E086E /* MapView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		DF511FFB2C9DC678000E086E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DF65C7DE2CA603C600EB89F6 /* Info.plist */,
+				DF511FFC2C9DC68B000E086E /* Constants.swift */,
+				DF5120082CA0A2C6000E086E /* backgroundMusic.mp3 */,
+				DF54652C2CA19CE9007F98E9 /* LaunchScreen.storyboard */,
+				DF511FE82C9DC516000E086E /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DF511FFE2C9DC7BB000E086E /* Attraction */ = {
+			isa = PBXGroup;
+			children = (
+				DF511FFF2C9DC7D1000E086E /* AttractionView.swift */,
+			);
+			path = Attraction;
+			sourceTree = "<group>";
+		};
+		DF5120032CA06FEA000E086E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DF5120042CA06FF7000E086E /* StartView.swift */,
+				DF5120062CA09BB7000E086E /* StrokeTextView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DF51200A2CA0C652000E086E /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				DF51200B2CA0C660000E086E /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		DF51200D2CA0C823000E086E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DF511FE42C9DC515000E086E /* HorusAdventuresApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DF51200F2CA0CCA1000E086E /* Achievement */ = {
+			isa = PBXGroup;
+			children = (
+				DF65C7D52CA5D25C00EB89F6 /* GetAchievementView.swift */,
+				DF65C7D72CA5D26F00EB89F6 /* AchievementsView.swift */,
+			);
+			path = Achievement;
+			sourceTree = "<group>";
+		};
+		DF5120102CA0D2A3000E086E /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				DF5120112CA0D2BA000E086E /* BackgroundSoundManager.swift */,
+				DF5465352CA33FC9007F98E9 /* WeatherService.swift */,
+				DF65C7DC2CA5F95500EB89F6 /* LocationManager.swift */,
+				DF65C7E12CA6243E00EB89F6 /* AchievementManager.swift */,
+				DF65C7E52CA7123E00EB89F6 /* NotificationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		DF5465302CA22A8C007F98E9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DF5465312CA22AA4007F98E9 /* Image+Ext.swift */,
+				DF5465332CA33AB5007F98E9 /* UserDefaults+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DF5465372CA34046007F98E9 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				DF5465382CA3406B007F98E9 /* WeatherSheet.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		DF65C7D92CA5D39700EB89F6 /* RoutePlanning */ = {
+			isa = PBXGroup;
+			children = (
+				DF65C7DA2CA5D3B100EB89F6 /* RoutePlanningView.swift */,
+				DF65C7E32CA6363C00EB89F6 /* TripsView.swift */,
+			);
+			path = RoutePlanning;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF511FE02C9DC515000E086E /* HorusAdventures */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF511FEF2C9DC516000E086E /* Build configuration list for PBXNativeTarget "HorusAdventures" */;
+			buildPhases = (
+				DF511FDD2C9DC515000E086E /* Sources */,
+				DF511FDE2C9DC515000E086E /* Frameworks */,
+				DF511FDF2C9DC515000E086E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HorusAdventures;
+			productName = HorusAdventures;
+			productReference = DF511FE12C9DC515000E086E /* HorusAdventures.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF511FD92C9DC515000E086E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					DF511FE02C9DC515000E086E = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = DF511FDC2C9DC515000E086E /* Build configuration list for PBXProject "HorusAdventures" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF511FD82C9DC515000E086E;
+			productRefGroup = DF511FE22C9DC515000E086E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF511FE02C9DC515000E086E /* HorusAdventures */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF511FDF2C9DC515000E086E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF511FEC2C9DC516000E086E /* Preview Assets.xcassets in Resources */,
+				DF54652D2CA19CE9007F98E9 /* LaunchScreen.storyboard in Resources */,
+				DF5120092CA0A2C7000E086E /* backgroundMusic.mp3 in Resources */,
+				DF511FE92C9DC516000E086E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF511FDD2C9DC515000E086E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF511FFD2C9DC68B000E086E /* Constants.swift in Sources */,
+				DF5120022CA06ED2000E086E /* MainView.swift in Sources */,
+				DF511FF92C9DC626000E086E /* MapView.swift in Sources */,
+				DF5465342CA33AB5007F98E9 /* UserDefaults+Ext.swift in Sources */,
+				DF65C7E62CA7123E00EB89F6 /* NotificationManager.swift in Sources */,
+				DF54652F2CA2284D007F98E9 /* Kind.swift in Sources */,
+				DF51200C2CA0C660000E086E /* SettingsView.swift in Sources */,
+				DF5465362CA33FC9007F98E9 /* WeatherService.swift in Sources */,
+				DF65C7D62CA5D25C00EB89F6 /* GetAchievementView.swift in Sources */,
+				DF65C7E42CA6363C00EB89F6 /* TripsView.swift in Sources */,
+				DF5465322CA22AA4007F98E9 /* Image+Ext.swift in Sources */,
+				DF5465392CA3406B007F98E9 /* WeatherSheet.swift in Sources */,
+				DF65C7D82CA5D26F00EB89F6 /* AchievementsView.swift in Sources */,
+				DF65C7DB2CA5D3B100EB89F6 /* RoutePlanningView.swift in Sources */,
+				DF511FF62C9DC5B8000E086E /* Attraction.swift in Sources */,
+				DF511FE52C9DC515000E086E /* HorusAdventuresApp.swift in Sources */,
+				DF5120002C9DC7D1000E086E /* AttractionView.swift in Sources */,
+				DF5120122CA0D2BA000E086E /* BackgroundSoundManager.swift in Sources */,
+				DF5120052CA06FF7000E086E /* StartView.swift in Sources */,
+				DF65C7DD2CA5F95500EB89F6 /* LocationManager.swift in Sources */,
+				DF5120072CA09BB7000E086E /* StrokeTextView.swift in Sources */,
+				DF65C7E22CA6243E00EB89F6 /* AchievementManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DF511FED2C9DC516000E086E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DF511FEE2C9DC516000E086E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF511FF02C9DC516000E086E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HorusAdventures/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HorusAdventures/Core/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Horus Adventures: Temples and Pyramids";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.adventure-games";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to be able to receive achievements. ";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AlexN0Y.HorusAdventures;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DF511FF12C9DC516000E086E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HorusAdventures/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HorusAdventures/Core/Resources/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Horus Adventures: Temples and Pyramids";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.adventure-games";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to be able to receive achievements. ";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AlexN0Y.HorusAdventures;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF511FDC2C9DC515000E086E /* Build configuration list for PBXProject "HorusAdventures" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF511FED2C9DC516000E086E /* Debug */,
+				DF511FEE2C9DC516000E086E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF511FEF2C9DC516000E086E /* Build configuration list for PBXNativeTarget "HorusAdventures" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF511FF02C9DC516000E086E /* Debug */,
+				DF511FF12C9DC516000E086E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DF511FD92C9DC515000E086E /* Project object */;
+}
