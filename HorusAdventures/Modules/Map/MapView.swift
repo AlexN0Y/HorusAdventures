@@ -42,9 +42,6 @@ struct MapView: View {
             }
         }
         .edgesIgnoringSafeArea(.all)
-        .onAppear {
-            locationManager.askForLocationPermission()
-        }
         .alert(isPresented: $locationManager.showSettingsAlert) {
             Alert(
                 title: Text("Location Access Required"),

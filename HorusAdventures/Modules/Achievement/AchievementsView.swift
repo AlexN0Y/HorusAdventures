@@ -19,7 +19,7 @@ struct AchievementsView: View {
                 }
                 .listRowBackground(achievementManager.isAchievementUnlocked(for: attraction.name) ? Color(UIColor.yellow.withAlphaComponent(0.3)) : Color(UIColor.lightGray.withAlphaComponent(0.3)))
             }
-            .navigationBarTitleDisplayMode(.inline)
+            .navigationBarTitleDisplayMode(.large)
             .navigationTitle("Achievements")
             .listStyle(PlainListStyle())
             .padding(.horizontal)
